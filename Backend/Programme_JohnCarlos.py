@@ -11,7 +11,7 @@ def main():
     root.withdraw()  # Masquer la fenêtre principale
 
     try:
-        # Charger ou créer le fichier
+        # Charger ou creer le fichier
         with open(file_name, "a+") as file:
             file.seek(0)
             existing_content = file.read()
@@ -34,7 +34,7 @@ def main():
                 messagebox.showwarning("Aucune entrée", "Aucun titre ou sous-titre saisi.")
 
     except Exception as e:
-        messagebox.showerror("Erreur", f"Une erreur s'est produite : {str(e)}")
+        messagebox.showerror("Erreur", f"Une erreur s'est produite :  {str(e)}")
 
 
 if __name__ == "__main__":
